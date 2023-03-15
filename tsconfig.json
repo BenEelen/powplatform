@@ -10,12 +10,13 @@
       "@roots/bud-stylelint",
       "@roots/bud-swc",
       "@roots/sage",
-      "@types/alpinejs"
+      "@types/alpinejs",
+      "webpack/module"
     ],
     "paths": {
       "@scripts/*": ["./resources/scripts/*"],
       "@styles/*": ["./resources/styles/*"]
-    },
+    }
   },
   "files": ["types/custom.d.ts"],
   "include": [
