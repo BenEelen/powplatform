@@ -40,6 +40,7 @@
   },
   "require": {
     "php": ">=8.0",
+    "blade-ui-kit/blade-icons": "^1.5",
     "composer/installers": "^2.2",
     "darylldoyle/safe-svg": "^2.0",
     "guzzlehttp/guzzle": "^7.5",
@@ -99,6 +100,9 @@
   "scripts": {
     "lint": "phpcs",
     "format": "pint",
-    "test": "pest"
+    "test": "pest",
+    "post-autoload-dump": [
+      "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+    ]
   }
 }

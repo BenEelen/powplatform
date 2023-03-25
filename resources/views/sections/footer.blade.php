@@ -2,6 +2,11 @@
   <div class="{{ $containerInnerClasses }}">
     @php(dynamic_sidebar('sidebar-footer'))
 
-    <p>Built with <a href="https://roots.io/products/radicle/" class="font-bold hover:text-underline">Radicle</a></p>
+    <p>
+      <a href="https://roots.io/radicle/" class="flex items-center gap-2 font-bold hover:text-underline">
+        <x-icon-radicle class="w-4 h-4" />
+        Built with Radicle
+      </a>
+    </p>
   </div>
 </footer>
