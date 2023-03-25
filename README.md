@@ -49,6 +49,7 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>🐳 Lando</summary>
   <br>
 
+  1. In `bud.config.js`: Replace `http://radicle.test` with `https://radicle.lndo.site`
   1. Run `yarn && yarn build`
   1. Run `lando start`
   1. Visit `https://radicle.lndo.site/`
@@ -61,7 +62,9 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>⚙️ Other</summary>
   <br>
 
+  1. In `bud.config.js`: Replace `http://radicle.test` with your local dev server URL
   1. Run `yarn && yarn build`
+  1. Run `composer install`
   1. Configure your local development setup to set the `public/` directory as the webroot.
 
 </details>
