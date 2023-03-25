@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-  👋 Welcome to Radicle
+    👋 Welcome to Radicle
 @endsection

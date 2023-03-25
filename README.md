@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<p align="center">Radicle is the preferred WordPress stack from Roots</p>
+<p align="center">Radicle is a WordPress stack from Roots</p>
 
 <p align="center">
   <a href="https://roots.io/radicle/">Website</a> &nbsp;&nbsp; <a href="https://roots.io/radicle/docs/installation/">Documentation</a> &nbsp;&nbsp; <a href="https://github.com/roots/radicle/releases">Releases</a> &nbsp;&nbsp; <a href="https://discourse.roots.io/c/radicle">Community</a>
@@ -29,6 +29,8 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>📦 Trellis</summary>
   <br>
 
+  Run `yarn && yarn build`
+
   Run `php .radicle-setup/trellis.php` to grab the latest version of Trellis and apply the necessary modifications for Radicle. After you've ran this script,
   navigate to the Trellis directory to init and start your project:
 
@@ -47,9 +49,11 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>🐳 Lando</summary>
   <br>
 
+  1. Run `yarn && yarn build`
   1. Run `lando start`
   1. Visit `https://radicle.lndo.site/`
-  1. Run `lando login` to generate a wp-admin login URL (WordPress must first be installed)
+
+  You can run `lando login` to generate a passwordless wp-admin login URL (WordPress must first be installed)
 
 </details>
 
@@ -57,7 +61,8 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>⚙️ Other</summary>
   <br>
 
-  Configure your local development setup to set the `public/` directory as the webroot.
+  1. Run `yarn && yarn build`
+  1. Configure your local development setup to set the `public/` directory as the webroot.
 
 </details>
 
@@ -102,6 +107,6 @@ If you are using a managed WordPress host, make sure that they meet these requir
 
 While we strive to help our customers in any way we can, a Radicle license doesn't cover the Roots team troubleshooting any application code issues that aren't directly related to Radicle itself.
 
-If you discover a bug in Radicle, please open an issue on the [Radicle issues repo on GitHub](https://github.com/roots/radicle-issues) with minimal reproduction instructions.
+If you discover a bug in Radicle, please make a topic on [Roots Discourse](https://discourse.roots.io/c/radicle) with minimal reproduction instructions.
 
-If you have feature requests or questions, please make a topic on [Roots Discourse](https://discourse.roots.io/c/radicle) or use the #radicle channel on our Discord server.
+If you have feature requests, questions, or feedback, please make a topic on [Roots Discourse](https://discourse.roots.io/c/radicle) or use the #radicle channel on our Discord server.
