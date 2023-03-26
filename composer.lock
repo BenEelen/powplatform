@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b892a0e8e6dfa9bbc35189a79ba6b74b",
+    "content-hash": "d2a3057f2410db321bdc63cceb656bff",
     "packages": [
         {
             "name": "blade-ui-kit/blade-icons",
@@ -290,21 +290,21 @@
         },
         {
             "name": "darylldoyle/safe-svg",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/10up/safe-svg.git",
-                "reference": "1e016108a721af56ed50e54bb1cc2dfe3ec62750"
+                "reference": "2608cb617ad068f5628f881d64635348ff9add13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/10up/safe-svg/zipball/1e016108a721af56ed50e54bb1cc2dfe3ec62750",
-                "reference": "1e016108a721af56ed50e54bb1cc2dfe3ec62750",
+                "url": "https://api.github.com/repos/10up/safe-svg/zipball/2608cb617ad068f5628f881d64635348ff9add13",
+                "reference": "2608cb617ad068f5628f881d64635348ff9add13",
                 "shasum": ""
             },
             "require": {
-                "enshrined/svg-sanitize": "^0.15.2",
-                "php": ">=7.0"
+                "enshrined/svg-sanitize": "^0.16.0",
+                "php": ">=7.4"
             },
             "require-dev": {
                 "10up/phpcs-composer": "dev-master",
@@ -334,9 +334,9 @@
             "homepage": "https://github.com/10up/safe-svg",
             "support": {
                 "issues": "https://github.com/10up/safe-svg/issues",
-                "source": "https://github.com/10up/safe-svg/tree/2.0.3"
+                "source": "https://github.com/10up/safe-svg/tree/2.1.0"
             },
-            "time": "2022-09-01T19:47:18+00:00"
+            "time": "2023-03-22T16:38:26+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -431,25 +431,26 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.15.4",
+            "version": "0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4"
+                "reference": "239e257605e2141265b429e40987b2ee51bba4b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
-                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/239e257605e2141265b429e40987b2ee51bba4b4",
+                "reference": "239e257605e2141265b429e40987b2ee51bba4b4",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "php": "^7.0 || ^8.0"
+                "ezyang/htmlpurifier": "^4.16",
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^8.5"
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^8.5"
             },
             "type": "library",
             "autoload": {
@@ -470,9 +471,70 @@
             "description": "An SVG sanitizer for PHP",
             "support": {
                 "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
-                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.16.0"
             },
-            "time": "2022-02-21T09:13:59+00:00"
+            "time": "2023-03-20T10:51:12+00:00"
+        },
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
+            },
+            "time": "2022-09-18T07:06:19+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -6404,16 +6466,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.11.2",
+            "version": "3.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "87f5b091fd4557772f9f9279bf55fd3dd8b15f90"
+                "reference": "9c7d97f585309b43094c5dea4545e14a57b57336"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/87f5b091fd4557772f9f9279bf55fd3dd8b15f90",
-                "reference": "87f5b091fd4557772f9f9279bf55fd3dd8b15f90",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/9c7d97f585309b43094c5dea4545e14a57b57336",
+                "reference": "9c7d97f585309b43094c5dea4545e14a57b57336",
                 "shasum": ""
             },
             "require": {
@@ -6426,6 +6488,8 @@
                 "codeception/module-webdriver": "^1.0",
                 "codeception/util-universalframework": "^1.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
+                "ergebnis/composer-normalize": "^2",
+                "johnbillion/plugin-infrastructure": "dev-trunk",
                 "lucatume/wp-browser": "^3.0.21",
                 "phpcompatibility/phpcompatibility-wp": "2.1.4",
                 "phpstan/phpstan": "^1.0",
@@ -6437,7 +6501,7 @@
             },
             "type": "wordpress-plugin",
             "extra": {
-                "wordpress-install-dir": "tests/wordpress"
+                "wordpress-install-dir": "vendor/roots/wordpress"
             },
             "autoload": {
                 "classmap": [
@@ -6469,7 +6533,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-23T16:41:12+00:00"
+            "time": "2023-03-24T12:42:30+00:00"
         },
         {
             "name": "laravel/pint",

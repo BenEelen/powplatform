@@ -50,7 +50,7 @@
         "php": ">=8.0",
         "blade-ui-kit/blade-icons": "^1.5",
         "composer/installers": "^2.2",
-        "darylldoyle/safe-svg": "^2.0",
+        "darylldoyle/safe-svg": "^2.1",
         "guzzlehttp/guzzle": "^7.5",
         "johnbillion/extended-cpts": "^5.0",
         "oscarotero/env": "^2.1",
@@ -66,7 +66,7 @@
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-        "johnbillion/query-monitor": "^3.11",
+        "johnbillion/query-monitor": "^3.12",
         "laravel/pint": "^1.4",
         "pestphp/pest": "^1.22",
         "phpcompatibility/php-compatibility": "^9.3",
