@@ -66,6 +66,7 @@ If you are using a managed WordPress host, make sure that they meet these requir
   1. Run `yarn && yarn build`
   1. Run `composer install`
   1. Configure your local development setup to set the `public/` directory as the webroot.
+  1. Copy `.env.example` to `.env` and update the [environment variables](https://roots.io/bedrock/docs/installation/#getting-started)
 
 </details>
 
