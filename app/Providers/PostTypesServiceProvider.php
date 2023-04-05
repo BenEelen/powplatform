@@ -22,6 +22,9 @@ class PostTypesServiceProvider extends ServiceProvider
          */
         add_action('init', function () {
             $post_types = config('post-types.post_types');
+            if (empty($post_types)) {
+                return;
+            }
 
             foreach ($post_types as $post_type => $args) {
                 $names = Arr::pull($args, 'names');
@@ -36,12 +39,14 @@ class PostTypesServiceProvider extends ServiceProvider
          */
         add_action('init', function () {
             $taxonomies = config('post-types.taxonomies');
+            if (empty($taxonomies)) {
+                return;
+            }
 
             foreach ($taxonomies as $taxonomy => $args) {
-                foreach ($args['post_types'] as $post_type) {
-                    $names = Arr::pull($args, 'names');
-                    register_extended_taxonomy($taxonomy, $post_type, $args, $names);
-                }
+                $names = Arr::pull($args, 'names');
+                $types = Arr::pull($args, 'post_types');
+                register_extended_taxonomy($taxonomy, $types, $args, $names);
             }
         }, 100);
     }
