@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\Arr;
-
+use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 
 class PostTypesServiceProvider extends ServiceProvider
@@ -20,16 +20,15 @@ class PostTypesServiceProvider extends ServiceProvider
          *
          * @return void
          */
-        add_action('init', function () {
-            $post_types = config('post-types.post_types');
-            if (empty($post_types)) {
-                return;
-            }
-
-            foreach ($post_types as $post_type => $args) {
-                $names = Arr::pull($args, 'names');
-                register_extended_post_type($post_type, $args, $names);
-            }
+        add_action('init', function (): void {
+            Collection::make(config('post-types.post_types'))
+                ->each(function ($args, $post_type) {
+                    register_extended_post_type(
+                        $post_type,
+                        $args,
+                        Arr::pull($args, 'names')
+                    );
+                });
         }, 100);
 
         /**
@@ -37,17 +36,16 @@ class PostTypesServiceProvider extends ServiceProvider
          *
          * @return void
          */
-        add_action('init', function () {
-            $taxonomies = config('post-types.taxonomies');
-            if (empty($taxonomies)) {
-                return;
-            }
-
-            foreach ($taxonomies as $taxonomy => $args) {
-                $names = Arr::pull($args, 'names');
-                $types = Arr::pull($args, 'post_types');
-                register_extended_taxonomy($taxonomy, $types, $args, $names);
-            }
+        add_action('init', function (): void {
+            Collection::make(config('post-types.taxonomies'))
+                ->each(function ($args, $taxonomy) {
+                    register_extended_taxonomy(
+                        $taxonomy,
+                        Arr::pull($args, 'post_types'),
+                        $args,
+                        Arr::pull($args, 'names')
+                    );
+                });
         }, 100);
     }
 }

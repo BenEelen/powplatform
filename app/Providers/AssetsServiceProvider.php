@@ -20,7 +20,7 @@ class AssetsServiceProvider extends ServiceProvider
          *
          * @return void
          */
-        add_action('wp_enqueue_scripts', function () {
+        add_action('wp_enqueue_scripts', function (): void {
             bundle('app')->enqueue();
 
             remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
@@ -31,14 +31,18 @@ class AssetsServiceProvider extends ServiceProvider
          *
          * @return void
          */
-        add_action('enqueue_block_editor_assets', function () {
+        add_action('enqueue_block_editor_assets', function (): void {
             bundle('editor')->enqueue();
         }, 100);
 
         /**
          * Add the type="module" attribute to script tags that have the .mjs extension.
+         *
+         * @param  string $tag
+         * @return string
          */
-        add_filter('script_loader_tag', function ($tag) {
+        add_filter('script_loader_tag', function (string $tag): string {
+
             $hasModuleExtension = str_contains($tag, '.mjs"');
 
             $hasModuleAttribute = ! empty(array_filter(
@@ -54,18 +58,19 @@ class AssetsServiceProvider extends ServiceProvider
         }, 10, 2);
 
         /**
-         * WP 5.9 duotone SVGs in footer fix
+         * Remove duotone SVGs from the footer.
          *
-         * @link https://github.com/WordPress/gutenberg/issues/38299#issuecomment-1025520487
+         * @link   https://github.com/WordPress/gutenberg/issues/38299#issuecomment-1025520487
+         * @return void
          */
-        add_action('after_setup_theme', function () {
-            // remove SVG and global styles
+        add_action('after_setup_theme', function (): void {
+            // Dequeue global and SVG styles.
             remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
 
-            // remove wp_footer actions which add's global inline styles
+            // Remove global styles from the footer.
             remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
 
-            // remove render_block filters which adding unnecessary stuff
+            // Remove unnecessary features when rendering blocks.
             remove_filter('render_block', 'wp_render_duotone_support');
             remove_filter('render_block', 'wp_restore_group_inner_container');
             remove_filter('render_block', 'wp_render_layout_support_flag');
