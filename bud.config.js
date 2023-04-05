@@ -8,10 +8,6 @@
  * @param {Bud} bud
  */
 export default async (bud) => {
-  bud.setPath({
-    '@storage': `storage/bud`,
-  });
-
   /**
    * Server config
    */
@@ -98,7 +94,6 @@ const applyRadicleConfig = async (radicle) => {
  */
 const applyGeneralConfig = (label, {isProduction, root, ...child}) => {
   child
-    .setPath(`@storage`, root.path(`@storage`, label))
     .experiments({topLevelAwait: true})
     .splitChunks(isProduction)
     .minimize(isProduction)
