@@ -12,6 +12,15 @@ return [
     ],
 
     /**
+     * Image sizes
+     *
+     * @link https://developer.wordpress.org/reference/functions/add_image_size/
+     */
+    'image_sizes' => [
+        // 'hd' => [1600, 900, true],
+    ],
+
+    /**
      * Sidebars
      *
      * @link https://developer.wordpress.org/reference/functions/register_sidebar/
