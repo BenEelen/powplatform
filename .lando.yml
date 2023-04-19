@@ -26,7 +26,7 @@ services:
     build:
       - composer install --working-dir=/app --no-progress --no-interaction --no-progress
   build:
-    type: node:16
+    type: node:18
     ssl: true
     build:
       - yarn install --immutable
