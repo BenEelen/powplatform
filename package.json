@@ -19,23 +19,23 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.31.2",
-    "@roots/bud": "6.12.1",
-    "@roots/bud-eslint": "6.12.1",
-    "@roots/bud-imagemin": "6.12.1",
-    "@roots/bud-preset-wordpress": "6.12.1",
-    "@roots/bud-prettier": "6.12.1",
-    "@roots/bud-stylelint": "6.12.1",
-    "@roots/bud-swc": "6.12.1",
-    "@roots/bud-tailwindcss": "6.12.1",
-    "@roots/eslint-config": "6.12.1",
-    "@roots/sage": "6.12.1",
+    "@roots/bud": "6.12.2",
+    "@roots/bud-eslint": "6.12.2",
+    "@roots/bud-imagemin": "6.12.2",
+    "@roots/bud-preset-wordpress": "6.12.2",
+    "@roots/bud-prettier": "6.12.2",
+    "@roots/bud-stylelint": "6.12.2",
+    "@roots/bud-swc": "6.12.2",
+    "@roots/bud-tailwindcss": "6.12.2",
+    "@roots/eslint-config": "6.12.2",
+    "@roots/sage": "6.12.2",
     "@tailwindcss/forms": "^0.5.3",
     "@types/alpinejs": "^3.7.1",
     "@types/wordpress__blocks": "^12.5.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@roots/wordpress-hmr": "6.12.1",
+    "@roots/wordpress-hmr": "6.12.2",
     "alpinejs": "^3.12.0"
   }
 }
