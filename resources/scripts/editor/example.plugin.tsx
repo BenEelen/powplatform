@@ -10,9 +10,9 @@ export const title = `Example plugin`;
 /** Plugin render */
 export const render = () => {
   useEffect(() => {
-    // Unregister all blocks that aren't in the text or media categories
+    // Unregister all blocks that aren't in the text, media, or design categories
     getBlockTypes()
-      .filter((block) => ![`text`, `media`].includes(block?.category))
+      .filter((block) => ![`text`, `media`, `design`].includes(block?.category))
       .map((block) => block.name)
       .map(unregisterBlockType);
   }, []);

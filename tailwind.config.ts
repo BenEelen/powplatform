@@ -5,7 +5,7 @@ import forms from '@tailwindcss/forms';
 export default {
   content: [
     './app/**/*.php',
-    './resources/**/*.{php,js,ts,vue}',
+    './resources/**/*.{php,js,ts,tsx,vue}',
     './resources/views/**/*.php',
     './public/content/themes/radicle/index.php',
   ],
