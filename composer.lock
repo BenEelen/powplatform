@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e1f71333298ebb748c8d1f98abc45e2",
+    "content-hash": "f1e8afb186acdc72d50ddde3ee992e89",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -6459,16 +6459,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.12.2",
+            "version": "3.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "12ccd63ddc4de4cd99e690ab2038a4f23feb7503"
+                "reference": "35fbb43061737a9cf15dd5341710eea39aba27a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/12ccd63ddc4de4cd99e690ab2038a4f23feb7503",
-                "reference": "12ccd63ddc4de4cd99e690ab2038a4f23feb7503",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/35fbb43061737a9cf15dd5341710eea39aba27a1",
+                "reference": "35fbb43061737a9cf15dd5341710eea39aba27a1",
                 "shasum": ""
             },
             "require": {
@@ -6526,7 +6526,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-27T23:42:11+00:00"
+            "time": "2023-05-17T23:12:34+00:00"
         },
         {
             "name": "laravel/pint",
@@ -9364,7 +9364,7 @@
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.0.27"
+        "php": "8.1.19"
     },
     "plugin-api-version": "2.3.0"
 }
