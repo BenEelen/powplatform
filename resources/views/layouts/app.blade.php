@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php wp_head(); ?>
+        @include('utils.styles')
     </head>
 
     <body <?php body_class(); ?>>
@@ -28,5 +29,6 @@
 
         <?php do_action('get_footer'); ?>
         <?php wp_footer(); ?>
+        @include('utils.scripts')
     </body>
 </html>
