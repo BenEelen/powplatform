@@ -21,7 +21,9 @@ If you are using a managed WordPress host, make sure that they meet these requir
 
 ## Getting started
 
-[**View the documentation**](https://roots.io/radicle/docs/)
+📝 [**View the documentation**](https://roots.io/radicle/docs/)
+
+💄 Visit the `/welcome/` route for component demos
 
 ### Local development
 

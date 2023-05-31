@@ -42,7 +42,6 @@ class AssetsServiceProvider extends ServiceProvider
          * @return string
          */
         add_filter('script_loader_tag', function (string $tag): string {
-
             $hasModuleExtension = str_contains($tag, '.mjs"');
 
             $hasModuleAttribute = ! empty(array_filter(

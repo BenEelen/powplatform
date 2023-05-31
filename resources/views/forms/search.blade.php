@@ -12,5 +12,5 @@
         >
     </label>
 
-    <button>{{ _x('Search', 'submit button', 'sage') }}</button>
+    <x-button>{{ _x('Search', 'submit button', 'sage') }}</x-button>
 </form>

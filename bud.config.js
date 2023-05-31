@@ -84,6 +84,14 @@ const applyRadicleConfig = async (radicle) => {
     .useTailwindColors()
     .useTailwindFontFamily()
     .useTailwindFontSize();
+
+  const { buttonStyles } = await import(
+    radicle.path(`resources/views/blocks/button.styles.js`)
+  );
+
+  Object.entries(buttonStyles).forEach(([key, value]) => {
+    radicle.wpjson.set(key, value);
+  });
 };
 
 /**

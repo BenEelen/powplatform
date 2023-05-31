@@ -12,12 +12,12 @@
     x-on:keydown.escape="open = false"
 >
     @if (isset($button))
-        <button
+        <x-button
             class="{{ $button->attributes->get('class') }}"
             @click="open = !open"
         >
             {{ $button }}
-        </button>
+        </x-button>
     @endif
 
     <div
