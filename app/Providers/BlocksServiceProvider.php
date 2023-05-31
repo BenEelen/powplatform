@@ -26,7 +26,10 @@ class BlocksServiceProvider extends ServiceProvider
                 $text = $dom->getElementsByTagName('a')->item(0)->textContent;
                 $type = 'primary';
 
-                if (isset($block['attrs']['className']) && strpos($block['attrs']['className'], 'is-style-outline') !== false) {
+                if (
+                    isset($block['attrs']['className']) &&
+                    strpos($block['attrs']['className'], 'is-style-outline') !== false
+                ) {
                     $type = 'outline';
                 }
 

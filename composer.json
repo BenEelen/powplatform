@@ -118,6 +118,7 @@
     "scripts": {
         "lint": "phpcs",
         "format": "pint",
+        "format:test": "pint --test",
         "test": "pest",
         "post-autoload-dump": [
             "Roots\\Acorn\\ComposerScripts::postAutoloadDump"

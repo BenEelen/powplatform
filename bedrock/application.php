@@ -13,6 +13,8 @@ use Roots\WPConfig\Config;
 
 use function Env\env;
 
+// phpcs:disable
+
 /**
  * Directory containing all of the site's files
  *
