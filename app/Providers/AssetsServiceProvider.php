@@ -58,22 +58,15 @@ class AssetsServiceProvider extends ServiceProvider
         }, 10, 2);
 
         /**
-         * Remove duotone SVGs from the footer.
+         * Remove default theme.json styles.
          *
-         * @link   https://github.com/WordPress/gutenberg/issues/38299#issuecomment-1025520487
+         * @link   https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/
          * @return void
          */
         add_action('after_setup_theme', function (): void {
-            // Dequeue global and SVG styles.
-            remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
-
-            // Remove global styles from the footer.
-            remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
-
-            // Remove unnecessary features when rendering blocks.
-            remove_filter('render_block', 'wp_render_duotone_support');
-            remove_filter('render_block', 'wp_restore_group_inner_container');
-            remove_filter('render_block', 'wp_render_layout_support_flag');
+            add_filter('wp_theme_json_data_default', function (\WP_Theme_JSON_Data $theme_json) {
+                return new \WP_Theme_JSON_Data([]);
+            });
         });
     }
 }
