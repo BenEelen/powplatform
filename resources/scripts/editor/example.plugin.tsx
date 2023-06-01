@@ -1,11 +1,12 @@
 import { getBlockTypes, unregisterBlockType } from '@wordpress/blocks';
 import { useEffect } from 'react';
+import { __ } from "@wordpress/i18n";
 
 /** Plugin name */
 export const name = `example-plugin`;
 
 /** Plugin title */
-export const title = `Example plugin`;
+export const title = __(`Example plugin`, `radicle`);
 
 /** Plugin render */
 export const render = () => {

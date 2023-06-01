@@ -1,8 +1,10 @@
+import { __ } from "@wordpress/i18n";
+
 /* Block name */
 export const name = `example/example-block-a`
 
 /* Block title */
-export const title = `Example block`
+export const title = __(`Example block`, `radicle`)
 
 /* Block category */
 export const category = `text`
@@ -15,11 +17,11 @@ export const save = () => <></>
 
 /* Block styles */
 export const styles = [
-  { name: `default`, label: `Default`, isDefault: true },
-  { name: `custom`, label: `Custom` },
+  { name: `default`, label: __(`Default`, `radicle`), isDefault: true },
+  { name: `custom`, label: __(`Custom`, `radicle`) },
 ]
 
 /* Block variations */
 export const variations = [
-  { name: `example/example-block-b`, title: `Example block variant` },
+  { name: `example/example-block-b`, title: __(`Example block variant`, `radicle`) },
 ]

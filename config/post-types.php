@@ -18,8 +18,8 @@ return [
             'supports' => ['title', 'editor', 'author', 'revisions', 'thumbnail'],
             'show_in_rest' => true,
             'names' => [
-                'singular' => 'Seed',
-                'plural' => 'Seeds',
+                'singular' => __('Seed', 'radicle'),
+                'plural' => __('Seeds', 'radicle'),
                 'slug' => 'seeds',
             ]
         ],
@@ -40,8 +40,8 @@ return [
             'post_types' => ['seed'],
             'meta_box' => 'radio',
             'names' => [
-                'singular' => 'Category',
-                'plural' => 'Categories',
+                'singular' => __('Category', 'radicle'),
+                'plural' => __('Categories', 'radicle'),
             ],
         ],
     ],
