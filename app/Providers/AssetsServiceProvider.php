@@ -63,6 +63,10 @@ class AssetsServiceProvider extends ServiceProvider
          * @return void
          */
         add_action('after_setup_theme', function (): void {
+            if (is_admin()) {
+                return;
+            }
+
             add_filter('wp_theme_json_data_default', function (\WP_Theme_JSON_Data $theme_json) {
                 return new \WP_Theme_JSON_Data([]);
             });
