@@ -11,9 +11,9 @@ export const title = __(`Example plugin`, `radicle`);
 /** Plugin render */
 export const render = () => {
   useEffect(() => {
-    // Unregister all blocks that aren't in the text, media, or design categories
+    // Unregister all blocks that aren't in the text, media, design, or widget categories
     getBlockTypes()
-      .filter((block) => ![`text`, `media`, `design`].includes(block?.category))
+      .filter((block) => ![`text`, `media`, `design`, `widgets`].includes(block?.category))
       .map((block) => block.name)
       .map(unregisterBlockType);
   }, []);
