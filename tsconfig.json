@@ -1,7 +1,12 @@
 {
-  "extends": "@roots/sage/config/tsconfig.json",
+  "extends": ["@roots/bud/config/tsconfig.json"],
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./resources",
+    "outDir": "./public/dist",
+    "paths": {
+      "@scripts": ["scripts"],
+      "@styles": ["styles"]
+    },
     "types": [
       "@roots/bud",
       "@roots/bud-eslint",
@@ -9,18 +14,16 @@
       "@roots/bud-prettier",
       "@roots/bud-stylelint",
       "@roots/bud-swc",
+      "@roots/bud-tailwindcss",
+      "@roots/bud-wordpress-theme-json",
       "@roots/sage",
       "@types/alpinejs",
       "webpack/module"
-    ],
-    "paths": {
-      "@scripts/*": ["./resources/scripts/*"],
-      "@styles/*": ["./resources/styles/*"]
-    }
+    ]
   },
-  "files": ["types/custom.d.ts"],
-  "include": [
-    "bud.js", // Don't remove this line
-    "resources"
-  ]
+  "files": ["types/custom.d.ts", "bud.config.ts"],
+  "include": ["resources"],
+  "bud": {
+    "useCompilerOptions": true
+  }
 }
