@@ -2375,10 +2375,21 @@
     "@wordpress/element" "^5.0.0"
     react-autosize-textarea "^7.1.0"
 
-"@types/wordpress__blocks@*", "@types/wordpress__blocks@12.5.0":
+"@types/wordpress__blocks@*":
   version "12.5.0"
   resolved "https://registry.yarnpkg.com/@types/wordpress__blocks/-/wordpress__blocks-12.5.0.tgz#98f0f36ba5e4b2b2f5f27a896d48f257e18bd0d4"
   integrity sha512-SGuNlBUYlzZTJmuc/iCfYGAj7QzLXxcJShSMPdPjay8k52Zy9PvCOcie+owpi2EHPZADAKhLrSzQFUh1F2F7PA==
+  dependencies:
+    "@types/react" "*"
+    "@types/wordpress__components" "*"
+    "@types/wordpress__shortcode" "*"
+    "@wordpress/data" "^8.5.0"
+    "@wordpress/element" "^5.0.0"
+
+"@types/wordpress__blocks@12.5.3":
+  version "12.5.3"
+  resolved "https://registry.yarnpkg.com/@types/wordpress__blocks/-/wordpress__blocks-12.5.3.tgz#df2988fec656e6b77ce6a6c144d94d7f04306b79"
+  integrity sha512-Q2zuFbrSYrbB+fcLThDBbfIWCYKiEdU2ZVMc+a6g1bloFmYiu1gi2q6GTLy5aESRqqisTX6Bx6pBvbADjZv7jg==
   dependencies:
     "@types/react" "*"
     "@types/wordpress__components" "*"
