@@ -19,7 +19,7 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
   },
   "devDependencies": {
-    "@playwright/test": "1.35.0",
+    "@playwright/test": "1.38.0",
     "@roots/bud": "6.13.1",
     "@roots/bud-eslint": "6.13.1",
     "@roots/bud-imagemin": "6.13.1",
