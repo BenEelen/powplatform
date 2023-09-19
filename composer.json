@@ -72,7 +72,7 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
         "johnbillion/query-monitor": "^3.12",
         "laravel/pint": "^1.4",
-        "pestphp/pest": "^1.22",
+        "pestphp/pest": "^2.0",
         "phpcompatibility/php-compatibility": "^9.3",
         "roave/security-advisories": "dev-latest",
         "spatie/laravel-ignition": "^1.6",
