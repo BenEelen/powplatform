@@ -2362,10 +2362,10 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
-"@types/wordpress__block-editor@11.5.1":
-  version "11.5.1"
-  resolved "https://registry.yarnpkg.com/@types/wordpress__block-editor/-/wordpress__block-editor-11.5.1.tgz#f488dc9e40dbd14e82d5eab91638425f70dd0e6f"
-  integrity sha512-uhCxvj38qvqGECU92j8vBflmAL9+P7/VUDccpILY85NL9zlQI/UntfkOsjXDsSpijteNjlhSOMxRZqVQMDrh6g==
+"@types/wordpress__block-editor@11.5.3":
+  version "11.5.3"
+  resolved "https://registry.yarnpkg.com/@types/wordpress__block-editor/-/wordpress__block-editor-11.5.3.tgz#a645d1cf05a368751ccaa3ba65093f5cc4b6f684"
+  integrity sha512-dh4uKTNoL7hU1geNG+EJJSyBE/XpfHKLnUOQ2nN3aO4n8W7xHWS4MWq8kjUyGr5u+/hkZVSiF8aobnIFmri0Uw==
   dependencies:
     "@types/react" "*"
     "@types/wordpress__blocks" "*"
