@@ -2584,16 +2584,16 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-3.0.2.tgz#6dd61e43ef60b34086287f83683a5c1b2dc53d20"
   integrity sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==
 
-"@types/wordpress__block-editor@11.5.3":
-  version "11.5.3"
-  resolved "https://registry.yarnpkg.com/@types/wordpress__block-editor/-/wordpress__block-editor-11.5.3.tgz#a645d1cf05a368751ccaa3ba65093f5cc4b6f684"
-  integrity sha512-dh4uKTNoL7hU1geNG+EJJSyBE/XpfHKLnUOQ2nN3aO4n8W7xHWS4MWq8kjUyGr5u+/hkZVSiF8aobnIFmri0Uw==
+"@types/wordpress__block-editor@11.5.8":
+  version "11.5.8"
+  resolved "https://registry.yarnpkg.com/@types/wordpress__block-editor/-/wordpress__block-editor-11.5.8.tgz#3e9c7f21e747e6b0b32274d8d242227c2876566a"
+  integrity sha512-QJJ9r+p8nHY/PflXCSbkOA1Jwl79HWrl1BqKqeH2eyICETaCDzZJZwm+oPlFfeVSC6BoVWKRIeQZplMZbp3ooQ==
   dependencies:
     "@types/react" "*"
     "@types/wordpress__blocks" "*"
     "@types/wordpress__components" "*"
     "@types/wordpress__keycodes" "*"
-    "@wordpress/data" "^8.5.0"
+    "@wordpress/data" "^9.13.0"
     "@wordpress/element" "^5.0.0"
     react-autosize-textarea "^7.1.0"
 
