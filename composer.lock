@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17d79efec7859e63897ca155e7fd0c2e",
+    "content-hash": "b470275f869e55a0e8a261f8942de529",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -2518,6 +2518,66 @@
                 }
             ],
             "time": "2023-10-17T14:13:20+00:00"
+        },
+        {
+            "name": "log1x/acorn-disable-media-pages",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/acorn-disable-media-pages.git",
+                "reference": "11a8c0bc4fbced93c328070adc29cefe4b706ebb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/acorn-disable-media-pages/zipball/11a8c0bc4fbced93c328070adc29cefe4b706ebb",
+                "reference": "11a8c0bc4fbced93c328070adc29cefe4b706ebb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Log1x\\DisableMediaPages\\DisableMediaPagesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Log1x\\DisableMediaPages\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me"
+                }
+            ],
+            "description": "Disable media attachment pages in WordPress.",
+            "keywords": [
+                "acorn",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/log1x/acorn-disable-media-pages/issues",
+                "source": "https://github.com/Log1x/acorn-disable-media-pages/tree/v1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Log1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-16T22:55:10+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -10165,5 +10225,5 @@
     "platform-overrides": {
         "php": "8.1.19"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
