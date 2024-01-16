@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b470275f869e55a0e8a261f8942de529",
+    "content-hash": "9ed2e15973e409e14860938cc6aa3e64",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -3805,6 +3805,73 @@
             "time": "2023-11-27T06:22:11+00:00"
         },
         {
+            "name": "roots/acorn-prettify",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/acorn-prettify.git",
+                "reference": "fbd29104d4e83cb12d007cca6c9ef28e1023d7e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/acorn-prettify/zipball/fbd29104d4e83cb12d007cca6c9ef28e1023d7e5",
+                "reference": "fbd29104d4e83cb12d007cca6c9ef28e1023d7e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Roots\\AcornPrettify\\AcornPrettifyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Roots\\AcornPrettify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me",
+                    "homepage": "https://github.com/log1x"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                },
+                {
+                    "name": "QWp6t",
+                    "email": "craig@roots.io",
+                    "homepage": "https://github.com/qwp6t"
+                }
+            ],
+            "description": "Theme-agnostic front-end modifications for WordPress",
+            "support": {
+                "issues": "https://github.com/roots/acorn-prettify/issues",
+                "source": "https://github.com/roots/acorn-prettify/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/roots",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-01-01T19:05:28+00:00"
+        },
+        {
             "name": "roots/bedrock-autoloader",
             "version": "1.0.4",
             "source": {
@@ -3927,84 +3994,6 @@
                 }
             ],
             "time": "2020-05-20T01:25:07+00:00"
-        },
-        {
-            "name": "roots/soil",
-            "version": "4.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/soil.git",
-                "reference": "e8e15c29f01414f86610445be8f7274b8b9a73b8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/e8e15c29f01414f86610445be8f7274b8b9a73b8",
-                "reference": "e8e15c29f01414f86610445be8f7274b8b9a73b8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "brain/monkey": "^2.5",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "mockery/mockery": "^1.3 | ^1.4",
-                "phpcompatibility/php-compatibility": "^9.3",
-                "phpunit/phpunit": "<= 9.3",
-                "squizlabs/php_codesniffer": "^3.5",
-                "wp-coding-standards/wpcs": "^2.3"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Roots\\Soil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Word",
-                    "email": "ben@benword.com",
-                    "homepage": "https://github.com/retlehs"
-                },
-                {
-                    "name": "Scott Walkinshaw",
-                    "email": "scott.walkinshaw@gmail.com",
-                    "homepage": "https://github.com/swalkinshaw"
-                },
-                {
-                    "name": "QWp6t",
-                    "email": "craig@roots.io",
-                    "homepage": "https://github.com/qwp6t"
-                }
-            ],
-            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
-            "homepage": "https://roots.io/plugins/soil/",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "forum": "https://discourse.roots.io/",
-                "issues": "https://github.com/roots/soil/issues",
-                "source": "https://github.com/roots/soil/tree/4.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://roots.io/plugins/soil/",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/rootsdev",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2022-08-01T17:32:31+00:00"
         },
         {
             "name": "roots/support",
@@ -10219,7 +10208,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0"
+        "php": ">=8.1"
     },
     "platform-dev": [],
     "platform-overrides": {
