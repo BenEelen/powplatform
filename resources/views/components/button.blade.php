@@ -6,7 +6,7 @@ if ($element === 'a' && !$attributes->has('href')) {
 
 $defaultClasses = 'inline-flex border border-black active:bg-black active:text-white ';
 
-$types = [
+$variants = [
     'primary' => 'text-white bg-black hover:bg-white hover:text-black',
     'outline' => 'text-black bg-transparent hover:bg-black hover:text-white',
 ];
@@ -20,9 +20,9 @@ $sizes = [
 @endphp
 
 <{{ $element }}
-    class="{{ $defaultClasses }} {{ $types[$attributes->get('type', 'primary')] }} {{ $sizes[$attributes->get('size', 'base')] }} {{ $attributes->get('class') }}"
+    class="{{ $defaultClasses }} {{ $variants[$attributes->get('variant', 'primary')] }} {{ $sizes[$attributes->get('size', 'base')] }} {{ $attributes->get('class') }}"
 
-    @foreach ($attributes->except(['class', 'type', 'size', 'element']) as $key => $value)
+    @foreach ($attributes->except(['class', 'variant', 'size', 'element']) as $key => $value)
         {{ $key }}="{{ $value }}"
     @endforeach
 >
