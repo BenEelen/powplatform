@@ -3806,16 +3806,16 @@
         },
         {
             "name": "roots/acorn-prettify",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/acorn-prettify.git",
-                "reference": "fbd29104d4e83cb12d007cca6c9ef28e1023d7e5"
+                "reference": "405aa44ef8b62dbf99d72803ef3a94e15baa0663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/acorn-prettify/zipball/fbd29104d4e83cb12d007cca6c9ef28e1023d7e5",
-                "reference": "fbd29104d4e83cb12d007cca6c9ef28e1023d7e5",
+                "url": "https://api.github.com/repos/roots/acorn-prettify/zipball/405aa44ef8b62dbf99d72803ef3a94e15baa0663",
+                "reference": "405aa44ef8b62dbf99d72803ef3a94e15baa0663",
                 "shasum": ""
             },
             "require": {
@@ -3861,7 +3861,7 @@
             "description": "Theme-agnostic front-end modifications for WordPress",
             "support": {
                 "issues": "https://github.com/roots/acorn-prettify/issues",
-                "source": "https://github.com/roots/acorn-prettify/tree/v1.0.0"
+                "source": "https://github.com/roots/acorn-prettify/tree/v1.0.1"
             },
             "funding": [
                 {
@@ -3869,7 +3869,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-01T19:05:28+00:00"
+            "time": "2024-01-23T11:46:06+00:00"
         },
         {
             "name": "roots/bedrock-autoloader",
