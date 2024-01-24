@@ -2521,16 +2521,16 @@
         },
         {
             "name": "log1x/acorn-disable-media-pages",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Log1x/acorn-disable-media-pages.git",
-                "reference": "11a8c0bc4fbced93c328070adc29cefe4b706ebb"
+                "reference": "4bffcc484afb52a9c175c998e0890cd60ae012ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Log1x/acorn-disable-media-pages/zipball/11a8c0bc4fbced93c328070adc29cefe4b706ebb",
-                "reference": "11a8c0bc4fbced93c328070adc29cefe4b706ebb",
+                "url": "https://api.github.com/repos/Log1x/acorn-disable-media-pages/zipball/4bffcc484afb52a9c175c998e0890cd60ae012ae",
+                "reference": "4bffcc484afb52a9c175c998e0890cd60ae012ae",
                 "shasum": ""
             },
             "require": {
@@ -2569,7 +2569,7 @@
             ],
             "support": {
                 "issues": "https://github.com/log1x/acorn-disable-media-pages/issues",
-                "source": "https://github.com/Log1x/acorn-disable-media-pages/tree/v1.0.1"
+                "source": "https://github.com/Log1x/acorn-disable-media-pages/tree/v1.0.2"
             },
             "funding": [
                 {
@@ -2577,7 +2577,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-16T22:55:10+00:00"
+            "time": "2024-01-02T21:53:20+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -10214,5 +10214,5 @@
     "platform-overrides": {
         "php": "8.1.19"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
