@@ -90,13 +90,6 @@ export default async (bud: Bud) => {
         .setFix(true)
         .setFailOnWarning(bud.isProduction)
     )
-
-    /**
-     * Image minification config
-     */
-    .when(`imagemin` in bud, ({ imagemin }) =>
-      imagemin.encode(`jpeg`, { mozjpeg: true, quality: 70 })
-    );
 };
 
 /**
