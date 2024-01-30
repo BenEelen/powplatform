@@ -33,7 +33,7 @@
     "@types/alpinejs": "^3.7.1",
     "@types/wordpress__block-editor": "11.5.10",
     "@types/wordpress__blocks": "12.5.13",
-    "typescript": "5.2.2"
+    "typescript": "5.3.3"
   },
   "dependencies": {
     "@roots/wordpress-hmr": "6.20.0",
