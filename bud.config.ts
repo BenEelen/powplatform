@@ -58,7 +58,7 @@ export default async (bud: Bud) => {
         fontSize: `var(--wp--preset--font-size--normal)`,
       },
     })
-    .setPath(bud.path(`public/content/themes/radicle/theme.json`));
+    .setPath(bud.path(`public/dist/theme.json`));
 
   bud.when(`tailwind` in bud, ({ wpjson }) =>
     wpjson.useTailwindColors().useTailwindFontFamily().useTailwindFontSize()

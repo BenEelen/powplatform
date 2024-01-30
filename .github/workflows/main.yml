@@ -83,3 +83,4 @@ jobs:
           yarn build
           cat public/dist/entrypoints.json
           cat public/dist/manifest.json
+          cat public/dist/theme.json
