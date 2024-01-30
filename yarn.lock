@@ -2595,10 +2595,10 @@
     "@wordpress/data" "^8.5.0"
     "@wordpress/element" "^5.0.0"
 
-"@types/wordpress__blocks@12.5.12":
-  version "12.5.12"
-  resolved "https://registry.yarnpkg.com/@types/wordpress__blocks/-/wordpress__blocks-12.5.12.tgz#2f7dd39c0b9fb6a1509ac4d3771a733b521edffc"
-  integrity sha512-zA/6A+STS8GIkW+UE3hEW9/0N75QqeVAZoWD6Saire/J/X7bLkpK6AvGMm6A1NPStxkIZ20IiA9e7xoqlJLI8g==
+"@types/wordpress__blocks@12.5.13":
+  version "12.5.13"
+  resolved "https://registry.yarnpkg.com/@types/wordpress__blocks/-/wordpress__blocks-12.5.13.tgz#d1fd25ffa71a0569f4652bf2050a6886c09e87e0"
+  integrity sha512-k2nlqxdNyaL6Uf/+zWhXeJJMKaPpikh5GdunNhNtpI1nSHM18Y+86y3rzjt1n0WcUQc1XkosvhcAEiGNYIhL9g==
   dependencies:
     "@types/react" "*"
     "@types/wordpress__components" "*"
