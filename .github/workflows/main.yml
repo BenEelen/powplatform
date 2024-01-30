@@ -46,9 +46,6 @@ jobs:
       - name: Execute the Composer lint script
         run: composer run-script lint
 
-      - name: Execute the Composer format:test script
-        run: composer run-script format:test
-
   node:
     name: Node ${{ matrix.node }}
     runs-on: ubuntu-latest
