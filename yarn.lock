@@ -2571,10 +2571,10 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-3.0.2.tgz#6dd61e43ef60b34086287f83683a5c1b2dc53d20"
   integrity sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==
 
-"@types/wordpress__block-editor@11.5.8":
-  version "11.5.8"
-  resolved "https://registry.yarnpkg.com/@types/wordpress__block-editor/-/wordpress__block-editor-11.5.8.tgz#3e9c7f21e747e6b0b32274d8d242227c2876566a"
-  integrity sha512-QJJ9r+p8nHY/PflXCSbkOA1Jwl79HWrl1BqKqeH2eyICETaCDzZJZwm+oPlFfeVSC6BoVWKRIeQZplMZbp3ooQ==
+"@types/wordpress__block-editor@11.5.10":
+  version "11.5.10"
+  resolved "https://registry.yarnpkg.com/@types/wordpress__block-editor/-/wordpress__block-editor-11.5.10.tgz#9e12c0ed99986a7303d25b041903269aecb2c56f"
+  integrity sha512-+cv7XP9ht3QZJFb59Os9cLlq6TNHTLugeaf+bR3mPGnzlCRXbyHN81TxfSXjhpB6Y8oKFcDUpVlrVRmoJ9QJGQ==
   dependencies:
     "@types/react" "*"
     "@types/wordpress__blocks" "*"
