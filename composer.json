@@ -50,7 +50,7 @@
     },
     "require": {
         "php": ">=8.1",
-        "blade-ui-kit/blade-heroicons": "^2.1",
+        "blade-ui-kit/blade-heroicons": "^2.2",
         "blade-ui-kit/blade-icons": "^1.5",
         "composer/installers": "^2.2",
         "guzzlehttp/guzzle": "^7.5",
@@ -58,7 +58,7 @@
         "log1x/acorn-disable-media-pages": "^1.0",
         "masterminds/html5": "^2.8",
         "oscarotero/env": "^2.1",
-        "roots/acorn": "^3.1",
+        "roots/acorn": "^4.0",
         "roots/acorn-prettify": "^1.0",
         "roots/bedrock-autoloader": "^1.0",
         "roots/bedrock-disallow-indexing": "^2.0",
@@ -75,7 +75,7 @@
         "pestphp/pest": "^2.0",
         "phpcompatibility/php-compatibility": "^9.3",
         "roave/security-advisories": "dev-latest",
-        "spatie/laravel-ignition": "^1.6"
+        "spatie/laravel-ignition": "^2.4"
     },
     "config": {
         "optimize-autoloader": true,
