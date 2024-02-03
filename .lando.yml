@@ -26,12 +26,15 @@ services:
     build:
       - composer install --working-dir=/app --no-progress --no-interaction --no-progress
   build:
-    type: node:20
+    type: node:18
     ssl: true
     build:
       - yarn install --immutable
       - yarn build
     scanner: false
+    overrides:
+      # See: https://github.com/lando/node/issues/66
+      image: node:20
   sendmailhog:
     type: mailhog
     portforward: true
