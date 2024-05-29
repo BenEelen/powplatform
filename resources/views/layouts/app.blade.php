@@ -13,7 +13,7 @@
 
         <div id="app">
             <a class="sr-only focus:not-sr-only" href="#main">
-                {{ __('Skip to content') }}
+                {{ __('Skip to content', 'radicle') }}
             </a>
 
             @include('sections.header')
