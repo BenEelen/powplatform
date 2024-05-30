@@ -36,21 +36,6 @@ class AssetsServiceProvider extends ServiceProvider
         }, 100);
 
         /**
-         * Use theme.json from the build directory
-         *
-         * @param  string $path
-         * @param  string $file
-         * @return string
-         */
-        add_filter('theme_file_path', function (string $path, string $file): string {
-            if ($file === 'theme.json') {
-                return public_path() . '/dist/theme.json';
-            }
-
-            return $path;
-        }, 10, 2);
-
-        /**
          * Add the type="module" attribute to script tags that have the .mjs extension.
          *
          * @param  string $tag
@@ -72,19 +57,38 @@ class AssetsServiceProvider extends ServiceProvider
         }, 10, 2);
 
         /**
-         * Remove default theme.json styles.
+         * Use theme.json from the build directory
+         *
+         * @param  string $path
+         * @param  string $file
+         * @return string
+         */
+        add_filter('theme_file_path', function (string $path, string $file): string {
+            if ($file === 'theme.json') {
+                return public_path() . '/dist/theme.json';
+            }
+
+            return $path;
+        }, 10, 2);
+
+        /**
+         * Remove default theme.json styles and use custom theme.json file path.
          *
          * @link   https://developer.wordpress.org/block-editor/reference-guides/filters/global-styles-filters/
          * @return void
          */
-        add_action('after_setup_theme', function (): void {
-            if (is_admin()) {
-                return;
+        add_filter('wp_theme_json_data_default', function (\WP_Theme_JSON_Data $themeJson): \WP_Theme_JSON_Data {
+            $themeJsonFile = public_path('/dist/theme.json');
+            if (!file_exists($themeJsonFile)) {
+                return $themeJson;
             }
 
-            add_filter('wp_theme_json_data_default', function (\WP_Theme_JSON_Data $theme_json) {
-                return new \WP_Theme_JSON_Data([]);
-            });
-        });
+            $decodedData = wp_json_file_decode($themeJsonFile, ['associative' => true]);
+            if (!is_array($decodedData) || empty($decodedData)) {
+                return $themeJson;
+            }
+
+            return new \WP_Theme_JSON_Data($decodedData, 'default');
+        }, 100);
     }
 }
