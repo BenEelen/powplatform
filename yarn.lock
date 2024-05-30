@@ -2811,14 +2811,14 @@
     "@wordpress/data" "^8.5.0"
     "@wordpress/element" "^5.0.0"
 
-"@types/wordpress__blocks@12.5.13":
-  version "12.5.13"
-  resolved "https://registry.yarnpkg.com/@types/wordpress__blocks/-/wordpress__blocks-12.5.13.tgz#d1fd25ffa71a0569f4652bf2050a6886c09e87e0"
-  integrity sha512-k2nlqxdNyaL6Uf/+zWhXeJJMKaPpikh5GdunNhNtpI1nSHM18Y+86y3rzjt1n0WcUQc1XkosvhcAEiGNYIhL9g==
+"@types/wordpress__blocks@12.5.14":
+  version "12.5.14"
+  resolved "https://registry.yarnpkg.com/@types/wordpress__blocks/-/wordpress__blocks-12.5.14.tgz#73e9761f80872a7bfb296e5a5dd70a51d095b8a7"
+  integrity sha512-eXEnCRKYu+39KEJ/OYpoYxWTATxI+eJHd+meMGZ14hYydFtxA0Y8M7zJT8D8f4klBo8wINLvP7zrO8vYrjWjPQ==
   dependencies:
     "@types/react" "*"
-    "@types/wordpress__components" "*"
     "@types/wordpress__shortcode" "*"
+    "@wordpress/components" "^27.2.0"
     "@wordpress/data" "^9.13.0"
     "@wordpress/element" "^5.0.0"
 
