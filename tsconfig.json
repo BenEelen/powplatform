@@ -10,7 +10,6 @@
     "types": [
       "@roots/bud",
       "@roots/bud-eslint",
-      "@roots/bud-imagemin",
       "@roots/bud-prettier",
       "@roots/bud-stylelint",
       "@roots/bud-swc",
