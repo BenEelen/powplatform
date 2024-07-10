@@ -25,6 +25,8 @@ export default async (bud: Bud) => {
         defaultGradients: false,
         defaultPalette: false,
         duotone: [],
+        text: true,
+        background: true,
       },
       custom: {
         spacing: {},
