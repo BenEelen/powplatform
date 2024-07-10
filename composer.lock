@@ -2625,16 +2625,16 @@
         },
         {
             "name": "johnbillion/extended-cpts",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/extended-cpts.git",
-                "reference": "98cddd4d0f174ee6466c70ea067b154559dbdc4e"
+                "reference": "904daa7095e72bcecd52b019123c78dece959205"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/98cddd4d0f174ee6466c70ea067b154559dbdc4e",
-                "reference": "98cddd4d0f174ee6466c70ea067b154559dbdc4e",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/904daa7095e72bcecd52b019123c78dece959205",
+                "reference": "904daa7095e72bcecd52b019123c78dece959205",
                 "shasum": ""
             },
             "require": {
@@ -2682,7 +2682,7 @@
             "homepage": "https://github.com/johnbillion/extended-cpts/",
             "support": {
                 "issues": "https://github.com/johnbillion/extended-cpts/issues",
-                "source": "https://github.com/johnbillion/extended-cpts/tree/5.0.7"
+                "source": "https://github.com/johnbillion/extended-cpts/tree/5.0.8"
             },
             "funding": [
                 {
@@ -2690,7 +2690,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-02T22:29:29+00:00"
+            "time": "2024-07-08T13:16:43+00:00"
         },
         {
             "name": "laravel/prompts",
