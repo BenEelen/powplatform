@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a2b83b23e58e9b904f4c0d27509450f",
+    "content-hash": "b55b57c3390bab8736874928815f0922",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -4539,7 +4539,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.5.3",
+            "version": "6.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -4570,7 +4570,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.5.3"
+                "source": "https://github.com/roots/wordpress/tree/6.5.5"
             },
             "funding": [
                 {
@@ -4653,22 +4653,22 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.5.3",
+            "version": "6.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.5.3"
+                "reference": "6.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.5.3-no-content.zip",
-                "shasum": "adeffdc339d34eab4209e88b17966d8917e36e91"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.5.5-no-content.zip",
+                "shasum": "064943063cafd63743ae303ec07225f173279527"
             },
             "require": {
                 "php": ">= 7.0.0"
             },
             "provide": {
-                "wordpress/core-implementation": "6.5.3"
+                "wordpress/core-implementation": "6.5.5"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -4719,7 +4719,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-05-07T16:02:20+00:00"
+            "time": "2024-06-24T19:14:42+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -10662,5 +10662,5 @@
     "platform-overrides": {
         "php": "8.2.18"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
