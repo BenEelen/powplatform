@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@roots/wordpress-hmr": "6.23.1",
-    "alpinejs": "3.14.0"
+    "alpinejs": "3.14.1"
   }
 }
