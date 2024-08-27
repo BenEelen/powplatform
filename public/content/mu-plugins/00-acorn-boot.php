@@ -11,4 +11,4 @@ if (! function_exists('\Roots\bootloader')) {
     );
 }
 
-add_action('after_setup_theme', fn () => \Roots\bootloader()->boot());
+add_action('after_setup_theme', fn () => \Roots\bootloader()->boot(), 0);
