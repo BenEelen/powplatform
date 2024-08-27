@@ -43,6 +43,7 @@ services:
   database:
     type: mariadb
     portforward: true
+    type: mariadb:10.11
   cache:
     type: redis
     portforward: true
