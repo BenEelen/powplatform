@@ -19,7 +19,7 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
   },
   "devDependencies": {
-    "@playwright/test": "1.45.1",
+    "@playwright/test": "1.46.1",
     "@roots/bud": "6.23.1",
     "@roots/bud-eslint": "6.23.1",
     "@roots/bud-preset-wordpress": "6.23.1",
