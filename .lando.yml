@@ -41,9 +41,8 @@ services:
     hogfrom:
       - appserver
   database:
-    type: mariadb
-    portforward: true
     type: mariadb:10.11
+    portforward: true
   cache:
     type: redis
     portforward: true
